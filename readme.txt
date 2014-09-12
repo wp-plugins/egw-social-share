@@ -8,7 +8,7 @@ Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-EGW Social Share  Social share buttons display on post or page or custom post,
+EGW CSS3 transitions Animation Social Social share buttons display on post or page or custom post,
 
 == Description ==
 
