@@ -3,7 +3,7 @@ Contributors: Saif Sohel ( scriptsell.net )
 Donate link: http://scriptsell.net/donate
 Tags: Facebook, Like, LinkedIn, Share, Google, Plus, +1, Pinterest, Google+, Twitter, Tweet, Follow, StumbleUpon, Stumble, Tumblr, Delicious, Digg, Reddit, Myspace, Hyves, YouTube, button, icon, image, Share, social, social share, Social-share-button, widget, zm-tech, deaviantART, App.net, mail, Gmail, AOL, Evernote, Hotmail, Instapaper, Mail.ru, Pocket, Sonico, vkontakte, Weibo, Yahoo Mail, Yammer, RSS, feed, connect, recommend, social, sharing, widget, shortcode, page, post, button, counter, icon, bitly, Open Graph
 Requires at least: 3.0.1
-Tested up to: 3.9
+Tested up to: 4
 Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
