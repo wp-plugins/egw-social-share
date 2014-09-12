@@ -1,7 +1,7 @@
 ﻿=== EGW SOCIAL SHARE===
 Contributors: Saif Sohel ( scriptsell.net )
 Donate link: http://scriptsell.net/donate
-Tags: Facebook, Like, LinkedIn, Share, Google, Plus, +1, Pinterest, Google+, Twitter, Tweet, Follow, StumbleUpon, Stumble, Tumblr, Delicious, Digg, Reddit, Myspace, Hyves, YouTube, Flickr, 500px, Picasa, deaviantART, App.net, mail, Gmail, AOL, Evernote, Hotmail, Instapaper, Mail.ru, Pocket, Sonico, vkontakte, Weibo, Yahoo Mail, Yammer, RSS, feed, connect, recommend, social, sharing, widget, shortcode, page, post, button, counter, icon, bitly, Open Graph
+Tags: Facebook, Like, LinkedIn, Share, Google, Plus, +1, Pinterest, Google+, Twitter, Tweet, Follow, StumbleUpon, Stumble, Tumblr, Delicious, Digg, Reddit, Myspace, Hyves, YouTube, button, icon, image, Share, social, social share, Social-share-button, widget, zm-tech, deaviantART, App.net, mail, Gmail, AOL, Evernote, Hotmail, Instapaper, Mail.ru, Pocket, Sonico, vkontakte, Weibo, Yahoo Mail, Yammer, RSS, feed, connect, recommend, social, sharing, widget, shortcode, page, post, button, counter, icon, bitly, Open Graph
 Requires at least: 3.0.1
 Tested up to: 3.9
 Stable tag: 1.1
@@ -13,6 +13,8 @@ EGW Social Share  Social share buttons display on post or page or custom post,
 == Description ==
 
 EGW Social Share is a simple and fast way to let your visitors share your content. With zero setup required, your visitors can quickly share your content to Twitter, Facebook and Google Plus, and more helping you expand your social reach.
+
+EGW Social share buttons  using pure CSS3 uses new transitions and different coding. It show lite/simple share button only with html css3. It's does not using any JavaScript whats another do. 
 
 Features :
 
