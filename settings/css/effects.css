@@ -1,0 +1,37 @@
+/*.effect_item_1*/
+.effect_item_1 { position: relative; cursor: default; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; -o-transition: all 0.4s ease-in-out; -ms-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; }
+.effect_item_1 .ch-info { position: absolute; background: rgba(63,147,147, 0.8); width: inherit; height: inherit; cursor: pointer; opacity: 0; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; -o-transition: all 0.4s ease-in-out; -ms-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; -webkit-transform: scale(0); -moz-transform: scale(0); -o-transform: scale(0); -ms-transform: scale(0); transform: scale(0); -webkit-backface-visibility: hidden; }
+.effect_item_1:hover .ch-info { -webkit-transform: scale(1); -moz-transform: scale(1); -o-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
+/*.effect_item_2*/
+.effect_item_2 { position: relative; cursor: default; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; -o-transition: all 0.4s ease-in-out; -ms-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; }
+.effect_item_2 .ch-info { position: absolute; width: 100%; height: 100%; border-radius: 50%; opacity: 0; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; -o-transition: all 0.4s ease-in-out; -ms-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; -webkit-transform: scale(0); -moz-transform: scale(0); -o-transform: scale(0); -ms-transform: scale(0); transform: scale(0); -webkit-backface-visibility: hidden; /*for a smooth font */ }
+.effect_item_2:hover { -moz-box-shadow: inset 0px 0px 0px 19px #ccc; -webkit-box-shadow: inset 0px 0px 0px 19px #ccc; box-shadow: inset 0px 0px 0px 19px #ccc; }
+/*.effect_item_3*/
+.effect_item_3 { position: relative; cursor: default; overflow: hidden; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; -o-transition: all 0.4s ease-in-out; -ms-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; }
+.effect_item_3 .ch-info { position: absolute; width: 100%; height: 100%; opacity: 0; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; -o-transition: all 0.4s ease-in-out; -ms-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; -webkit-transform: scale(0); -moz-transform: scale(0); -o-transform: scale(0); -ms-transform: scale(0); transform: scale(0); -webkit-backface-visibility: hidden; /*for a smooth font */ }
+.effect_item_3.item_1 .ch-info, .effect_item_3.item_4 .ch-info { border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; }
+.effect_item_3:hover .ch-info { -webkit-transform: rotate3d(0, 1, 0, -180deg); -moz-transform: rotate3d(0, 1, 0, -180deg); -o-transform: rotate3d(0, 1, 0, -180deg); -ms-transform: rotate3d(0, 1, 0, -180deg); transform: rotate3d(0, 1, 0, -180deg); }
+/*.effect_item_4*/
+.effect_item_4 { cursor: pointer; -webkit-transition: all 0.4s; -moz-transition: all 0.4s; -o-transition: all 0.4s; -ms-transition: all 0.4s; }
+.effect_item_4.item_1, .effect_item_4.item_2, .effect_item_4.item_3 { outline: none; -webkit-box-shadow: 0px 0px 0px 0px #000000!important; -moz-box-shadow: 0px 0px 0px 0px #000000!important; box-shadow: 0px 0px 0px 0px #000000!important; }
+.effect_item_4.item_4, .effect_item_4.item_5, .effect_item_4.item_6 { outline: none; -webkit-box-shadow: 0px 0px 0px 2px #000000; -moz-box-shadow: 0px 0px 0px 2px #000000; box-shadow: 0px 0px 0px 2px #000000; }
+.effect_item_4:hover { -webkit-transform: scale(1.3); -moz-transform: scale(1.3); -o-transform: scale(1.3); transform: scale(1.5); z-index: 99999; }
+/*.effect_item_5*/
+.effect_item_5 { -webkit-transition: -webkit-transform 0.4s ease-out; -moz-transition: -moz-transform 0.4s ease-out; transition: transform 0.4s ease-out; }
+.effect_item_5.item_1, .effect_item_5.item_2, .effect_item_5.item_3 { outline: none; -webkit-box-shadow: 0px 0px 0px 0px #000000!important; -moz-box-shadow: 0px 0px 0px 0px #000000!important; box-shadow: 0px 0px 0px 0px #000000!important; }
+.effect_item_5.item_4, .effect_item_5.item_5, .effect_item_5.item_6 { outline: none; -webkit-box-shadow: 0px 0px 0px 2px #000000; -moz-box-shadow: 0px 0px 0px 2px #000000; box-shadow: 0px 0px 0px 2px #000000; }
+.effect_item_5:hover { -webkit-transform: rotateZ(360deg); -moz-transform: rotateZ(360deg); transform: rotateZ(360deg); }
+/*.effect_item_6*/
+.effect_item_6 { -webkit-transition: margin 0.4s ease-out; -moz-transition: margin 0.4s ease-out; transition: margin.4s ease-out; margin-top: 0px; }
+.btn_effect li { float: left; width: 56px; }
+.btn_effect .egw_icon_btn.effect_item_6 { margin-right: 0px; }
+.effect_item_6:hover { margin-top: -10px!important; }
+/*.effect_item_1*/
+.egw_icon_btn.effect_item_7{ overflow:visible;}
+.effect_item_7 { position: relative;   cursor: default; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; -o-transition: all 0.4s ease-in-out; -ms-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; }
+.effect_item_7 .ch-info { position: absolute; background:#FFF!important; cursor: pointer; opacity:0.9!important; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; -o-transition: all 0.4s ease-in-out; -ms-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; -webkit-transform: scale(0); -moz-transform: scale(0); -o-transform: scale(0); -ms-transform: scale(0); transform: scale(0); -webkit-backface-visibility: hidden;
+left:-1px; top:-1px; right:-1px; bottom:-1px;
+}
+.egw_icon_btn.effect_item_7:hover{ background:none!important;}
+.effect_item_7:hover .ch-info { -webkit-transform: scale(1); -moz-transform: scale(1); -o-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
+.effect_item_7:hover:before{ text-shadow:none!Important;}

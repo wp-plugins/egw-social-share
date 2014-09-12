@@ -1,4 +1,4 @@
-﻿=== EGW Hover Effects ===
+﻿=== EGW SOCIAL SHARE===
 Contributors: Saif Sohel ( scriptsell.net )
 Donate link: http://scriptsell.net/donate
 Tags: widget, hover Effects, colorful, CSS3 Image Hover, Text effect, image effect
@@ -8,102 +8,60 @@ Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A simple widget that makes it a breeze to add images,Content, And CSS3 Hover Animation.
+EGW Social Share  Social share buttons display on post or page or custom post,
 
 == Description ==
 
-EGW images hover effect using pure CSS uses new transitions and different coding. which is suitable for portfolio, image gallery and much more as Sidebar. You can set animation for image and caption separately. Easy to use and customization, no need to knowledge’s ,CSS,HTML. Simple, Easy And Stylizes 
+EGW Social Share is a simple and fast way to let your visitors share your content. With zero setup required, your visitors can quickly share your content to Twitter, Facebook and Google Plus, and more helping you expand your social reach.
 
-= Features =
+Features
 
-*Pure CSS3
-*Without JavaScript or jQuery
-*Title and Description
-*Default settings can be overridden using filter.
-*Easy code implementation External css
-*Easy to use and customization
-*Supports override of template so that you can override the template for your theme!
+    Twitter, Facebook, Google+, Linkedin, Pinterest, Delicious, Digg, Stumbleupon, Bufferapp, Reddit, Tumblr, Email, Print .
+    Customize Icon Size , Color, Background, Effects
+    enable/disable sharing of your posts, pages, custom post, home page, single posts page, pages, tags, categories, author archives ,Search results ,archives
+    Image Free Fonts Icon
+    Disable the social share bar in specific posts/pages
+    Social Networks Graph Meta Tags supported
+    No Jquery Requiring,
+    Full CSS3 Effects And Animations
+    Easy To design sharing box and Icon
+    Allow shortcode, Set Different Style and effects with shortcode attributes
+    Pring single post/page content only
+    Quick Installation & Simple Usage.
 
-Widget Options:-
+Customize and make it your own
 
-*Upload, link to external image, or select an image from your media collection using the built in thickbox browser.
-*Link the image
-*Ability to change image hover effects
-*Ability to change image hover effects
-*Ability to disable captions
-*Ability to disable captions, title, text background, color, font size , font family
-*Disable/enable captions opacity?
-*Ability to change Widgets style (Square, Round)
-*Ability to change Widgets border color and size
-*you can use All html supported fonts
-*Captions padding
-
-Image Effects:-
-
-*Fadeout
-*Blur
-*Gray
-*Sepia
-*Round
-*Zoom in
-*Zoom out outside
-*Zoom out inside
-*Rotate out outside
-*Rotate out inside
-*Rotate vertical
-*Rotate horizontal
-*Side left
-*Side Right
-*Side top
-*Side Bottom
-*No effect(will be simply html images)
-
-Captions Effects:-
-   
-*Fade-in
-*Bounce
-*Zoom in
-*Zoom Out
-*Rotate in outside
-*Rotate in inside
-*Rotate vertical
-*Rotate horizontal
-*Side left
-*Side right
-*Side top
-*Side bottom
-*Side left half
-*Side Right half
-*Side top half
-*Side Bottom half
-*No effect (simply title and text display bellow image)
+    Zero setup necessary; simply install and go
+    Add to any theme
+    Activation button
+    Share button separators
+    Share button Icon Size
+    Background Color
+    Share Box background and Color
+    Add icon effects
 
 
 
 == Installation ==
 
 
-1. Upload `egw-hover-effects-widget` to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Go to `Appearence/Widget` menu then drag-drop `EGW Hover Effects ` widget to your sidebar
-4. Click on the sidebar navigation -> Appearance -> Widgets drag and drop (EGW Hover Effects) widget to any of the sidebars.
-Open the widget in the sidebar And Set your image,hover Effects,Background Color,Text Color , Button Color.
+1. Upload `egwSocialShare` to the `/wp-content/plugins/` directory
+2. Activate the `egwSocialShare` plugin through the 'Plugins' menu in WordPress
 
 
 
 == Screenshots ==
 
-1. Widgets admin screen
-
+1. General Settings
+2. Social Buttons Settings
+3. Buttons Effect Settings
+4. Preview
 
 == Changelog ==
 = 1.0 =
 The First Upload
 
 == Upgrade Notice ==
-
-= 1.1 =
-Dynamic widget width and height and readmore.text
 
 = 1.0 =
 The First Upload

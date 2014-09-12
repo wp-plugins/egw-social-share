@@ -1,0 +1,282 @@
+@font-face {
+	font-family: 'zocial';
+	src: url('../../fonts/zocial.eot');
+	src: url('../../fonts/zocial.eot?#iefix') format('embedded-opentype'), url('../../fonts/zocial.woff') format('woff'), url('../../fonts/zocial.ttf') format('truetype'), url('../../fonts/zocial.svg#zocial') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.egw_social_share_box ul {
+	margin: 0px!important;
+	padding: 0px!important;
+}
+.egw_social_share_box li {
+	float: left;
+	list-style: none;
+	margin:0px!important;
+}
+
+.egw_social_share_box a.egw_btn {
+	display: block;
+	color:#FFF!important;
+	position: relative;
+	margin: 0px auto;
+	cursor: default;
+	text-decoration:none;
+	padding:0px!important;
+}
+a.egw_btn:before {
+	font-family: 'zocial';
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	display: inline-block;
+	text-decoration: inherit;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	content: '\66';
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	vertical-align: central;
+	text-shadow: 0px 0px 1px #737373;
+	z-index: 99;
+	cursor: pointer;
+}
+.egw_social_share_box a.egw_btn:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+.egw_btn span {
+	cursor: pointer;
+}
+#facebook {
+	background: #086dd9;
+	outline-color: #086dd9;
+}
+#facebook:before {
+	content: '\66';
+}
+#twitter {
+	background: #00b7fa;
+	outline-color: #00b7fa;
+}
+#twitter:before {
+	content: '\54';
+}
+#linkedin {
+	background: #4393bb;
+	outline-color: #4393bb;
+}
+#linkedin:before {
+	content: '\4c';
+}
+#google {
+	background: #f96542;
+	outline-color: #f96542;
+}
+#google:before {
+	content: '\47';
+}
+#buffer {
+	background: #e60303;
+}
+#buffer:before {
+	content: '\e5';
+}
+#delicious {
+	background: #3399ff;
+}
+#delicious:before {
+	content: '\23';
+}
+#digg {
+	background: #094883;
+}
+#digg:before {
+	content: '\3b';
+}
+#reddit {
+	background: #759dc6;
+}
+#reddit:before {
+	content: '\3e';
+}
+#stumbleupon {
+	background: #0284b2;
+}
+#stumbleupon:before {
+	content: '\2f';
+}
+#tumblr {
+	background: #304d6b;
+}
+#tumblr:before {
+	content: '\74';
+}
+#pinterest {
+	background: #d62d34;
+}
+#pinterest:before {
+	content: '\31';
+}
+#e_mail {
+	background: #dfb906;
+}
+#e_mail:before {
+	content: '\5d';
+}
+#print {
+	background: #bcbcbc;
+}
+#print:before {
+	content: '\d1';
+}
+.egw_btn.item_1, .egw_btn.item_4 {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+.egw_btn.item_2, .egw_btn.item_5,.egw_btn.item_2 span, .egw_btn.item_5 span{
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius: 6px;
+}
+
+.egw_btn.item_4, .egw_btn.item_5, .egw_btn.item_6 {
+	border: 3px solid #FFFFFF;
+}
+
+.egw_btn.item_4:before, .egw_btn.item_5:before, .egw_btn.item_6:before {
+	
+	
+}
+.egw_btn.item_1 span, .egw_btn.item_4 span {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+.egw_btn span {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+/*effect-1*/
+.egw_effect_1 span {
+	position: absolute;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-backface-visibility: hidden;
+}
+.egw_effect_1:hover span {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 0.8;
+}
+/*effect-2*/
+.egw_effect_2 span {
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+/*effect-3*/
+.egw_effect_3 span {
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-backface-visibility: hidden; /*for a smooth font */
+	background-color: rgb(0, 39, 147);
+	opacity: 0.8;
+}
+.egw_effect_3:hover span {
+	-webkit-transform: rotate3d(0, 1, 0, -180deg);
+	-moz-transform: rotate3d(0, 1, 0, -180deg);
+	-o-transform: rotate3d(0, 1, 0, -180deg);
+	-ms-transform: rotate3d(0, 1, 0, -180deg);
+	transform: rotate3d(0, 1, 0, -180deg);
+}
+/*effect-4*/
+.egw_effect_4 {
+	cursor: pointer;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+}
+.egw_effect_4:hover {
+	-webkit-transform: scale(1.3);
+	-moz-transform: scale(1.3);
+	-o-transform: scale(1.2);
+	transform: scale(1.5);
+	z-index: 99999;
+}
+/*effect-5*/
+.egw_effect_5 {
+	-webkit-transition: -webkit-transform 0.4s ease-out;
+	-moz-transition: -moz-transform 0.4s ease-out;
+	transition: transform 0.4s ease-out;
+}
+.egw_effect_5 span{
+	background:none!important;
+}
+.egw_effect_5:hover {
+	-webkit-transform: rotateZ(360deg);
+	-moz-transform: rotateZ(360deg);
+	transform: rotateZ(360deg);
+}
+/*effect-6*/
+.egw_effect_6 { -webkit-transition: margin 0.4s ease-out;
+ -moz-transition: margin 0.4s ease-out; transition: margin.4s ease-out; margin-top: 0px;  }
+.egw_effect_6:hover span{ display:none;}
+.egw_effect_6:hover { margin-top: -8px!important;   }
+/*effect-6*/
+.egw_icon_btn.egw_effect_7{ overflow:visible;}
+.egw_effect_7 { position: relative;   cursor: default; -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; -o-transition: all 0.4s ease-in-out; -ms-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; }
+.egw_effect_7 span { position: absolute; background:#FFF!important;
+cursor: pointer; 
+opacity:0.9!important;
+-webkit-transition: all 0.4s ease-in-out;
+-moz-transition: all 0.4s ease-in-out;
+-o-transition: all 0.4s ease-in-out;
+-ms-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out; 
+-webkit-transform: scale(0); 
+-moz-transform: scale(0);
+-o-transform: scale(0);
+-ms-transform: scale(0); 
+transform: scale(0); 
+-webkit-backface-visibility: hidden;
+width:auto!important;
+height:atuo!important;
+left:-0px; top:-0px; right:-0px; bottom:-0px;
+
+}
+.egw_effect_7:hover{ background:none!important;}
+.egw_effect_7:hover span { -webkit-transform: scale(1); -moz-transform: scale(1); -o-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
+.egw_effect_8:hover span{ display:none;}

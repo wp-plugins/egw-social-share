@@ -1,0 +1,101 @@
+@font-face { font-family: 'zocial'; src: url('../../fonts/zocial.eot'); src: url('../../fonts/zocial.eot?#iefix') format('embedded-opentype'), url('../../fonts/zocial.woff') format('woff'), url('../../fonts/zocial.ttf') format('truetype'), url('../../fonts/zocial.svg#zocial') format('svg'); font-weight: normal; font-style: normal; }
+.form-table th { padding: 20px 10px; font-weight: bold; vertical-align: top; }
+#wpbody-content .metabox-holder { padding-top: 0px!important; }
+h2.nav-tab-wrapper, h3.nav-tab-wrapper { border-bottom: 0px!important; padding-left: 5px; }
+#egw_footer { font-size: 11px; }
+#egw_footer { display: block; }
+#egw_footer li { float: left; width: 160px; border-right: 1px solid #000; padding: 10px; }
+#egw_footer li span { display: block; }
+#egw_footer li:last-child { border-right: none; }
+.multiwrp { float: left; padding-right: 15px; }
+.description { clear: both; display: block; font-size: 11px!important; }
+.form-table input[type=checkbox] { margin-top: 10px; margin-right: 5px; }
+.multiwrp label { margin-top: -5px; float: left; margin-right: 10px; }
+.multiwrp .ffCheckboxWrapper a { margin-top: -2px!important; float: left; text-transform: capitalize; }
+.ffSelectMenuMid UL { background-color: #ffffff; }
+.ffSelectMenuMid UL LI { background-color: transparent; }
+.ffSelectButton { height: 28px!important; }
+.ffSelectMenuWrapper { top: 28px!important; }
+#egw_social_btn_button_style li { float: left; margin: 0px 6px; }
+#egw_social_btn_button_style li span { display: block; height: 40px; width: 40px; overflow: hidden; text-indent: -600px; cursor: pointer; background: #0088c8; }
+#egw_social_btn_button_style .ffSelectMenuMidBG ul { background: #FFF; height: 100px; padding-bottom: 10px; }
+#egw_social_btn_button_style li.item_1 span { -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; }
+#egw_social_btn_button_style li.item_2 span { -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; }
+#egw_social_btn_button_style li.item_4 span, .egw_icon_btn.item_4 { outline: 2px solid; outline-color: #0088c8; border: 3px solid #ffffff; height: 35px; width: 35px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; -moz-outline-radius: 60%; -webkit-outline-radius: 60%; outline-radius: 60%; }
+#egw_social_btn_button_style li.item_5 span, .egw_icon_btn.item_5 { -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; outline: 2px solid #0088c8; border: 3px solid #ffffff; height: 35px; width: 35px; -moz-outline-radius: 7px; -webkit-outline-radius: 7px; outline-radius: 7px; }
+#egw_social_btn_button_style li.item_6 span, .egw_icon_btn.item_6 { outline: 2px solid #0088c8; border: 3px solid #ffffff; height: 35px; width: 35px; }
+#egw_social_btn_button_style .ffSelectButton span { text-indent: -600px; }
+#egw_social_btn_button_style .ffSelectButton i { width: 18px; height: 18px; display: block; background: #0088c8; margin-top: 5px; margin-left: -4px; }
+#egw_social_btn_button_style .ffSelectButton i.item_1 { -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; }
+#egw_social_btn_button_style .ffSelectButton i.item_2 { -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+#egw_social_btn_button_style .ffSelectButton i.item_4 { outline: 1px solid #0088c8; border: 2px solid #ffffff; height: 15px; width: 15px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; -moz-outline-radius: 50%; -webkit-outline-radius: 50%; outline-radius: 50%; }
+#egw_social_btn_button_style i.item_5 { -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; outline: 1px solid #0088c8; border: 2px solid #ffffff; height: 14px; width: 14px; -moz-outline-radius: 5px; -webkit-outline-radius: 5px; outline-radius: 5px; }
+#egw_social_btn_button_style i.item_6 { outline: 2px solid #0088c8; border: 2px solid #ffffff; height: 15px; width: 15px; }
+#egw_social_share .wp-picker-container { position: relative; }
+#egw_social_share .wp-picker-holder { position: absolute; z-index: 9999; top: 32px; }
+#egw_social_share .hide_input .ffTextBoxWrapper { width: 80px!Important; height: 26px!important; padding: 0px!important; margin: 0px!important; }
+.wp-color-result.wp-picker-open { margin: 0px!important; }
+.wp-picker-input-wrap .ffTextBoxLeft input { width: 70px!important; }
+.socialWrp { position: relative; padding-left: 120px; }
+.socialWrp .button.button-small { display: none!important; }
+.socialWrp .ffCheckboxWrapper { position: absolute; left: 00px; top: 15px; }
+.form-table th { position: relative; }
+.egw_icon_btn { width: 40px; height: 40px; display: block; overflow: hidden; cursor: pointer; color: #FFF;}
+.egw_icon_btn:before { font-family: 'zocial'; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 100%; height: 100%; font-size: 16px; text-align: center; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: antialiased; font-smoothing: antialiased; text-rendering: optimizeLegibility; line-height: 40px;  }
+.egw-align-left { float: left; margin-right: 15px; margin-top: 10px; }
+.egw_icon_btn.item_1 { -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; }
+.egw_icon_btn.item_2 { -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px; }
+.egw_icon_btn.item_3 { -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; }
+.egw_icon_btn.item_4, .egw_icon_btn.item_5, .egw_icon_btn.item_6 { margin-top: -6px; float: left; }
+.egw_icon_btn .icon { display: block; background: url(../../image/follow-icons-1.2.4.png) no-repeat left top; width: 35px; height: 35px; }
+#facebook { background: #086dd9; outline-color: #086dd9; }
+#facebook:before { content: '\66'; }
+#twitter { background: #00b7fa; outline-color: #00b7fa; }
+#twitter:before { content: '\54'; }
+#linkedin { background: #4393bb; outline-color: #4393bb; }
+#linkedin:before { content: '\4c'; }
+#google { background: #f96542; outline-color: #f96542; }
+#google:before { content: '\47'; }
+#buffer { background: #e60303; }
+#buffer:before { content: '\e5'; }
+#delicious { background: #3399ff; }
+#delicious:before { content: '\23'; }
+#digg { background: #094883; }
+#digg:before { content: '\3b'; }
+#reddit { background: #759dc6; }
+#reddit:before { content: '\3e'; }
+#stumbleupon { background: #0284b2; }
+#stumbleupon:before { content: '\2f'; }
+#tumblr { background: #304d6b; }
+#tumblr:before { content: '\74'; }
+#pinterest { background: #d62d34; }
+#pinterest:before { content: '\31'; }
+#e_mail { background: #dfb906; }
+#e_mail:before { content: '\5d'; }
+#print { background: #bcbcbc; }
+#print:before { content: '\d1'; }
+#egw_social_share .form-table th { font-size: 12px!important; }
+.egw_icon_btn.item_4:before, .egw_icon_btn.item_5:before, .egw_icon_btn.item_6:before { line-height: 36px; }
+.btn_effect, .egw_btn_wrp { display: block; clear: both; margin: 5px; padding: 10px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; border: 1px solid #CCC; }
+.btn_effect .egw_icon_btn, .egw_btn_wrp .egw_icon_btn { position: static; float: left; margin-top: 0px!important; }
+.btn_effect .ffRadioWrapper, .egw_btn_wrp .ffCheckboxWrapper { float: left; margin-right: 20px; margin-top: 10px; }
+.btn_effect .egw_icon_btn { position: relative; left: 0px; margin-right: 15px; }
+.btn_effect .egw_icon_btn:before { position: absolute; }
+.egw_btn_wrp .egw_icon_btn { margin-right: 20px; }
+.egw_btn_wrp .wp-color-result { margin-top: 0px; float: left; top: 2px; margin-right: 5px; }
+.egw_btn_wrp .ffTextBoxWrapper { margin: 0px; height: 22px; }
+.egw_btn_wrp { min-height: 65px; }
+.btn_effect .egw_icon_btn.item_1 .ch-info, .btn_effect .egw_icon_btn.item_4 .ch-info { border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; }
+.egw_icon_btn:before { position: relative; z-index: 999; cursor: pointer; }
+.egw_btn_wrp .egw_icon_btn:before { position: static; z-index: 0; }
+.btn_effect{ min-height:48px;}
+.egw_header{ padding:5px; border:1px solid #CCC; background:url(images/setting_icon.png) no-repeat 10px center; padding-left:50px;
+ -webkit-border-radius:5px;
+ -moz-border-radius:5px;
+ border-radius:5px;}
+.egw_social_form .ffTextBoxLeft{ padding:0px;}
+.egw_social_form input[type=text]{ width:80px;}
+
+#egw_open_graph .egw_social_form input[type="text"]{
+	width:300px;
+}
