@@ -2,11 +2,11 @@
 /*
 Plugin Name: EGW Social Share 
 Plugin URI: http://scriptsell.net/
-Description: EGW Social Share  is a simple yet eye-catching Css3 Animation social sharing bar  that allows you to enable sharing of your posts,pages,custom post. Also you can control home page, single posts/page, pages, tags,categories,author archives,Search results ,archives section Social Share bar.
+Description:EGW CSS3 transitions Animation Social Social share buttons display on post or page or custom post,.
 Author: Saif Sohel(proscriptsell@gmail.com)
 Version:1.0
 Author URI: http://scriptsell.net/
-Tags: CSS3, Animation, Social share, share button effects
+Tags:  Facebook, Like, LinkedIn, Share, Google, Plus, +1, Pinterest, Google+, Twitter, Tweet, Follow, StumbleUpon, Stumble, Tumblr, Delicious, Digg, Reddit, Myspace, Hyves, YouTube, button, icon, image, Share, social, social share, Social-share-button, widget, zm-tech, deaviantART, App.net, mail, Gmail, AOL, Evernote, Hotmail, Instapaper, Mail.ru, Pocket, Sonico, vkontakte, Weibo, Yahoo Mail, Yammer, RSS, feed, connect, recommend, social, sharing, widget, shortcode, page, post, button, counter, icon, bitly, Open Graph
 */
 
 define('EGWGENERALSETTING','egw_general_settings');
