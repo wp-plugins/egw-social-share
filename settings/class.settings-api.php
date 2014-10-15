@@ -209,7 +209,7 @@ class EGW_Settings_API {
         $value = esc_attr( $this->get_option( $args['id'], $args['section'], $args['std'] ) );
 
         $html = sprintf( '<input type="hidden" name="%1$s[%2$s]" value="off" />', $args['section'], $args['id'] );
-        $html .= sprintf( '<input type="checkbox" class="checkbox" id="%1$s[%2$s]" name="%1$s[%2$s]" value="on"%4$s disabled="disabled" />', $args['section'], $args['id'], $value, checked( $value, 'on', false ) );
+        $html .= sprintf( '<input type="checkbox"  id="%1$s[%2$s]" name="%1$s[%2$s]" value="on"%4$s disabled="disabled" />', $args['section'], $args['id'], $value, checked( $value, 'on', false ) );
         $html .= sprintf( '<label for="%1$s[%2$s]"> %3$s</label>', $args['section'], $args['id'], $args['desc'] );
  		 $html .= sprintf( '<span class="description" style="color:#F00"> Unlock premium options by upgrading to a PRO version. <a href="http://www.codegrape.com/item/wordpress-css3-animation-social-share-plugins/3003?ref=proscriptsell" target="_blank">buy now only at $5</a></span>');
         echo $html;
