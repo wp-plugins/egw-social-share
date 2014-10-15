@@ -42,6 +42,7 @@ class EGW_Settings_API {
 		wp_enqueue_style( 'egw_stylesheet', plugins_url( '/css/fancyfields.css', __FILE__ ) );
 		wp_enqueue_style( 'egwSocialShare_stylesheet', plugins_url( '/css/admin.css', __FILE__ ) );
 		wp_enqueue_style( 'egwSocialShare_effects', plugins_url( '/css/effects.css', __FILE__ ) );
+		
 		wp_register_script( 'common-js', plugins_url( '/js/egw-common.js', __FILE__ ),true );
 		wp_enqueue_script( 'common-js',true);
 		
@@ -161,6 +162,16 @@ class EGW_Settings_API {
 
         echo $html;
     }
+	 function callback_text_disabled( $args ) {
+
+        $value = esc_attr( $this->get_option( $args['id'], $args['section'], $args['std'] ) );
+        $size = isset( $args['size'] ) && !is_null( $args['size'] ) ? $args['size'] : 'regular';
+
+        $html = sprintf( '<input type="text" class="%1$s-text" id="%2$s[%3$s]" name="%2$s[%3$s]" value="%4$s" disabled="disabled"/>', $size, $args['section'], $args['id'], $value );
+        $html .= sprintf( '<span class="description"> %s</span>', $args['desc'] );
+ 		$html .= sprintf( '<span class="description" style="color:#F00"> Unlock premium options by upgrading to a PRO version. <a href="http://www.codegrape.com/item/wordpress-css3-animation-social-share-plugins/3003?ref=proscriptsell" target="_blank">buy now only at $5</a></span>');
+        echo $html;
+    }
 	 /**
      * Displays a text field for a settings field
      *
@@ -191,6 +202,16 @@ class EGW_Settings_API {
         $html .= sprintf( '<input type="checkbox" class="checkbox" id="%1$s[%2$s]" name="%1$s[%2$s]" value="on"%4$s />', $args['section'], $args['id'], $value, checked( $value, 'on', false ) );
         $html .= sprintf( '<label for="%1$s[%2$s]"> %3$s</label>', $args['section'], $args['id'], $args['desc'] );
 
+        echo $html;
+    }
+	 function callback_checkbox_disabled( $args ) {
+
+        $value = esc_attr( $this->get_option( $args['id'], $args['section'], $args['std'] ) );
+
+        $html = sprintf( '<input type="hidden" name="%1$s[%2$s]" value="off" />', $args['section'], $args['id'] );
+        $html .= sprintf( '<input type="checkbox" class="checkbox" id="%1$s[%2$s]" name="%1$s[%2$s]" value="on"%4$s disabled="disabled" />', $args['section'], $args['id'], $value, checked( $value, 'on', false ) );
+        $html .= sprintf( '<label for="%1$s[%2$s]"> %3$s</label>', $args['section'], $args['id'], $args['desc'] );
+ 		 $html .= sprintf( '<span class="description" style="color:#F00"> Unlock premium options by upgrading to a PRO version. <a href="http://www.codegrape.com/item/wordpress-css3-animation-social-share-plugins/3003?ref=proscriptsell" target="_blank">buy now only at $5</a></span>');
         echo $html;
     }
 
@@ -228,8 +249,11 @@ class EGW_Settings_API {
 		$i=0;
         foreach ( $args['options'] as $key => $label ) {
 			$i++;
+			if($i==1){
             $html .= sprintf( '<div class="btn_effect"><input type="radio" class="radio" id="%1$s[%2$s][%3$s]" name="%1$s[%2$s]" value="%3$s"%4$s />', $args['section'], $args['id'], $key, checked( $value, $key, false ) );
-           
+			}else{
+				 $html .= sprintf( '<div class="btn_effect"><input type="radio" class="radio" id="%1$s[%2$s][%3$s]" name="%1$s[%2$s]" value="%3$s"%4$s  disabled="disabled" />', $args['section'], $args['id'], $key, checked( $value, $key, false ) );
+			}
 				if($i==6){
 					 $html .= '<ul>
 					 	<li><div id="facebook" class="egw_icon_btn effect_item_'.$key.' '.$btnstyle.'">
@@ -269,7 +293,7 @@ class EGW_Settings_API {
 						</div>';
 				}
 						
-			  $html .='<div style="clear:both"></div></div>';
+			  $html .='<div style="clear:both"></div><span class="description" style="color:#F00"> Unlock premium options by upgrading to a PRO version. <a href="http://www.codegrape.com/item/wordpress-css3-animation-social-share-plugins/3003?ref=proscriptsell" target="_blank">buy now only at $5</a></span></div>';
         }
       
 
@@ -313,6 +337,24 @@ class EGW_Settings_API {
         }
         $html .= sprintf( '</select>' );
         $html .= sprintf( '<span class="description"> %s</span>', $args['desc'] );
+		$html .='</div>';
+        echo $html;
+    }
+	
+	
+	 function callback_select_disabled( $args ) {
+
+        $value = esc_attr( $this->get_option( $args['id'], $args['section'], $args['std'] ) );
+        $size = isset( $args['size'] ) && !is_null( $args['size'] ) ? $args['size'] : 'regular';
+		$html = sprintf( '<div id="%2$s_%3$s">', $size, $args['section'], $args['id'] );
+        $html .= sprintf( '<select class="%1$s" name="%2$s[%3$s]" id="%2$s[%3$s]" disabled="disabled">', $size, $args['section'], $args['id'] );
+		$i=0;
+        foreach ( $args['options'] as $key => $label ) {
+			$i++;
+            $html .= sprintf( '<option value="%s"%s class="item_'.$i.'">%s</option>', $key, selected( $value, $key, false ), $label );
+        }
+        $html .= sprintf( '</select>' );
+        $html .= sprintf( '<span class="description" style="color:#F00"> Unlock premium options by upgrading to a PRO version. <a href="http://www.codegrape.com/item/wordpress-css3-animation-social-share-plugins/3003?ref=proscriptsell" target="_blank">buy now only at $5</a></span>', $args['desc'] );
 		$html .='</div>';
         echo $html;
     }
