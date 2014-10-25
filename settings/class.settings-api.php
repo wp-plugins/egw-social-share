@@ -653,7 +653,7 @@ class EGW_Settings_API {
 <div class="round-block">
 
 <div class="box"><img title="PSD to Wordpress" src="[live_url]/wp-content/themes/script-sell/images/ps.png" alt="" />
-<h3>PSD to Wordpress $350 </h3>
+<h3>PSD to Wordpress $200 </h3>
 I’m a freelance WordPress developer and web designer based in bangladesh, Dhaka. I started freelancing in 2007 and have worked for a wide range of personal clients and agencies.<br /><br />
 
 I can make your website look and function stunning using our PSD to Wordpress Theme Conversion and Customization Services.
