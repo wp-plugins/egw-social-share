@@ -244,7 +244,7 @@ class EGW_Settings_API {
         foreach ( $args['options'] as $key => $label ) {
             $checked = isset( $value[$key] ) ? $value[$key] : '1';
 		
-            $html .= sprintf( '<div class="multiwrp"><input disabled="disabled" type="checkbox" class="checkbox" id="%1$s[%2$s][%3$s]" name="%1$s[%2$s][%3$s]" value="%3$s"%4$s />', $args['section'], $args['id'], $key, checked( $checked, $key, false ) );
+            $html .= sprintf( '<div class="multiwrp"><input checked="checked" disabled="disabled" type="checkbox" class="checkbox" id="%1$s[%2$s][%3$s]" name="%1$s[%2$s][%3$s]" value="%3$s"%4$s />', $args['section'], $args['id'], $key, checked( $checked, $key, false ) );
             $html .= sprintf( '<label for="%1$s[%2$s][%4$s]"> %3$s</label></div>', $args['section'], $args['id'], $label, $key );
         }
         $html .= sprintf( '<span class="description"> %s</label>', $args['desc'] );
