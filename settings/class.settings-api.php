@@ -343,6 +343,20 @@ class EGW_Settings_API {
 
         echo $html;
     }
+	
+ function callback_radio_free( $args ) {
+
+        $value = $this->get_option( $args['id'], $args['section'], $args['std'] );
+
+        $html = '';
+        foreach ( $args['options'] as $key => $label ) {
+            $html .= sprintf( '<div class="multiwrp"><input disabled="disabled" type="radio" class="radio" id="%1$s[%2$s][%3$s]" name="%1$s[%2$s]" value="%3$s"%4$s />', $args['section'], $args['id'], $key, checked( $value, $key, false ) );
+            $html .= sprintf( '<label for="%1$s[%2$s][%4$s]"> %3$s</label></div>', $args['section'], $args['id'], $label, $key );
+        }
+        $html .= sprintf( '<input type="hidden" checked="checked" value="32" name="egw_social_btn[btn_size]"><span class="description"> %s</label><span class="description" style="color:#F00"> Unlock premium options by upgrading to a PRO version. <a href="http://www.codegrape.com/item/wordpress-css3-animation-social-share-plugins/3003?ref=proscriptsell" target="_blank">buy now only at $5</a></span>', $args['desc'] );
+
+        echo $html;
+    }
 
     /**
      * Displays a selectbox for a settings field

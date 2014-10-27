@@ -187,7 +187,7 @@ class EGW_Settings {
                     'name' => 'btn_size',
                     'label' => __( 'Social Buttons Size', 'EGW' ),
                     'desc' => __( '', 'EGW' ),
-                    'type' => 'radio',
+                    'type' => 'radio_free',
 					 'desc' => __( ' ', 'EGW' ),
 					'default' => '32',
                     'options' => array(
