@@ -676,7 +676,7 @@ I’m a freelance WordPress developer and web designer based in bangladesh, Dhak
 I can make your website look and function stunning using our PSD to Wordpress Theme Conversion and Customization Services.
 <br /><br />
 Contact Me: &nbsp; &nbsp;  skype: proscriptsell  &nbsp; &nbsp; & &nbsp; &nbsp; email:proscriptsell@gmail.com<br />
-Payment Method : <a href="http://www.skrill.com" target="_blank">www.skrill.com</a>
+
 <br /><br />
 </div>
 <h3>Please help me a bit  (Donate with Moneybookers)</h3>
