@@ -156,7 +156,7 @@ class EGW_Settings {
                     'name' => 'share_type',
                     'label' => __( 'Share Page Open', 'EGW' ),
                     'desc' => __( '', 'EGW' ),
-                    'type' => 'select_disabled',
+                    'type' => 'select',
                     'default' => 'top',
                     'options' => array(
                         'popup' => 'Popup windows',
@@ -169,7 +169,7 @@ class EGW_Settings {
                     'name' => 'open_graph',
                     'label' => __( 'Active open graph', 'EGW' ),
                     'desc' => __( '', 'EGW' ),
-                    'type' => 'checkbox_disabled'
+                    'type' => 'checkbox'
                 ),
 				 array(
                     'name' => 'readOnly',
@@ -187,7 +187,7 @@ class EGW_Settings {
                     'name' => 'btn_size',
                     'label' => __( 'Social Buttons Size', 'EGW' ),
                     'desc' => __( '', 'EGW' ),
-                    'type' => 'radio_free',
+                    'type' => 'radio',
 					 'desc' => __( ' ', 'EGW' ),
 					'default' => '32',
                     'options' => array(
@@ -202,7 +202,7 @@ class EGW_Settings {
                     'name' => 'custom_btn_size',
                     'label' => __( 'Custom Buttons Size', 'EGW' ),
                     'desc' => __( ' If you add custom button size . default button size will be inactive ,px will be auto load', 'EGW' ),
-                    'type' => 'text_disabled',
+                    'type' => 'text',
                    
                 ),
 				 array(

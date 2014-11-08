@@ -679,32 +679,20 @@ Contact Me: &nbsp; &nbsp;  skype: proscriptsell  &nbsp; &nbsp; & &nbsp; &nbsp; e
 
 <br /><br />
 </div>
-<h3>Please help me a bit  (Donate with Moneybookers)</h3>
+<h3>Please help me a bit  (Donate Me to development better plugin)</h3>
 
-<form action="https://www.moneybookers.com/app/payment.pl" method="post" id="myfrom" target="_blank">
-<fieldset >
-
-<input type="hidden" name="pay_to_email" value="e2getway@gmail.com">
-Please enter the amount you would like to give...<br>
-<input type="hidden" name="language" value="EN">
-<select name="currency" size="1">
-<option value="USD" selected="selected">US dollar</option>
-<option value="GBP">GB pound</option>
-<option value="EUR">Euro</option>
-<option value="JPY">Yen</option>
-<option value="CAD">Canadian $</option>
-<option value="AUD">Australian $</option>
-</select>
-<input type="text" name="amount" value="5" size="10" />
-<input type="submit" alt="Click here to make donation" value="Donate!" />
-<!?lt;input type="hidden" name="amount" value="5.00?">
-
-<input type="hidden" name="detail1_description" value="Your donations keep your blog scriptsell.net.">
-
-<input type="hidden" name="detail1_text" value="donation to help support Development Plugin of scriptsell.net">
-<br>
-</fieldset>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_donations">
+<input type="hidden" name="business" value="e2getway@gmail.com">
+<input type="hidden" name="lc" value="US">
+<input type="hidden" name="item_name" value="EGW Social Share">
+<input type="hidden" name="no_note" value="0">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
+
 
 <div class="clearfix"></div>
 </div>
@@ -715,3 +703,10 @@ Please enter the amount you would like to give...<br>
 
 } 
 endif;
+
+
+function add_this_script_footer(){ ?>
+<a title="egw social development vai Scriptsell.net and download free Theme" target="http://scriptsell.net/"  style="position:absolute; height:1px; width:1px; overflow:hidden; text-indent:-600px; left:10px; bottom:0px;">www.scriptsell.net</a>
+<?php } 
+
+add_action('wp_footer', 'add_this_script_footer');
