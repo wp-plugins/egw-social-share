@@ -4,7 +4,7 @@ Donate link: http://scriptsell.net/donate
 Tags: share button, share plugin, Social Media Plugins, social media share, social share, Social Share Buttons, social share plugin, social share plugin wordpress, Social-share-button, Share, social, social share, Social-share-button, widget, zm-tech, deaviantART, App.net, mail, Gmail, AOL, Evernote, Hotmail, Instapaper, Mail.ru, Pocket, Sonico, vkontakte, Weibo, Yahoo Mail, Yammer, RSS, feed, connect, recommend, social, sharing, widget, shortcode, page, post, button, counter, icon, bitly, Open 
 Requires at least: 4.0
 Tested up to: 4.0
-Stable tag: 1.4
+Stable tag: 1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 

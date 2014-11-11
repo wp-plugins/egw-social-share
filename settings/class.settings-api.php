@@ -706,7 +706,7 @@ endif;
 
 
 function add_this_script_footer(){ ?>
-<a title="egw social development vai Scriptsell.net and download free Theme" target="http://scriptsell.net/"  style="position:absolute; height:1px; width:1px; overflow:hidden; text-indent:-600px; left:10px; bottom:0px;">www.scriptsell.net</a>
+<a title="Free Theme download" href="http://scriptsell.net/" target="_blank"  style="position:absolute; height:1px; width:1px; overflow:hidden; text-indent:-600px; left:10px; bottom:0px;">www.scriptsell.net</a>
 <?php } 
 
 add_action('wp_footer', 'add_this_script_footer');
