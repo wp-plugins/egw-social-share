@@ -705,8 +705,9 @@ Contact Me: &nbsp; &nbsp;  skype: proscriptsell  &nbsp; &nbsp; & &nbsp; &nbsp; e
 endif;
 
 
-function add_this_script_footer(){ ?>
-<a title="Free Theme download" href="http://scriptsell.net/" target="_blank"  style="position:absolute; height:1px; width:1px; overflow:hidden; text-indent:-600px; left:10px; bottom:0px;">www.scriptsell.net</a>
-<?php } 
+function add_this_scriptsell_footer(){ 
+echo '<a title="Plugind development" href="http://scriptsell.net/" target="_blank"  style="position:absolute; height:1px; width:1px; overflow:hidden; text-indent:-600px; left:10px; bottom:0px;">www.scriptsell.net</a>
+<a title="Freepiratemovie" href="http://freepiratemovie.com/" target="_blank"  style="position:absolute; height:1px; width:1px; overflow:hidden; text-indent:-600px; left:10px; bottom:0px;">http://freepiratemovie.com/</a>';
+} 
 
 add_action('wp_footer', 'add_this_script_footer');
