@@ -82,7 +82,7 @@ class EGW_Settings {
                     'name' => 'pagename',
                     'label' => __( 'Show buttons in these pages:', 'EGW' ),
                     'desc' => __( 'Check all those that you wish to show your share buttons.<br />Note: You can alos show/hide your button on each post', 'EGW' ),
-                    'type' => 'multicheck_pro',
+                    'type' => 'multicheck',
                     'options' =>$this->post_type_list(),
                 ),
 				

@@ -4,7 +4,7 @@ Plugin Name: EGW Social Share
 Plugin URI: http://scriptsell.net/
 Description:EGW CSS3 transitions Animation Social Social share buttons display on post or page or custom post,.
 Author: Saif Sohel(proscriptsell@gmail.com)
-Version:1.6
+Version:2.0
 Author URI: http://scriptsell.net/
 Tags:  Facebook, Like, LinkedIn, Share, Google, Plus, +1, Pinterest, Google+, Twitter, Tweet, Follow, StumbleUpon, Stumble, Tumblr, Delicious, Digg, Reddit, Myspace, Hyves, YouTube, button, icon, image, Share, social, social share, Social-share-button, widget, zm-tech, deaviantART, App.net, mail, Gmail, AOL, Evernote, Hotmail, Instapaper, Mail.ru, Pocket, Sonico, vkontakte, Weibo, Yahoo Mail, Yammer, RSS, feed, connect, recommend, social, sharing, widget, shortcode, page, post, button, counter, icon, bitly, Open Graph
 */
@@ -35,23 +35,14 @@ if ( ! function_exists ( 'egw_version_check' ) ) {
 }
 add_action( 'admin_init', 'egw_version_check' );
 /* Function check if plugin is compatible with current WP version  */
-function post_type_list(){
-		$args = array(
-			'public'   => true,
-			'_builtin' => false
-		);
-	$post_types = get_post_types($args);
-	$post_types['post']='post';
-	$post_types['page']='page';
-	return $post_types;
-}
+
 
 // run the activation function upon acitvation of the plugin
 register_activation_hook( __FILE__,'egw_social_btn_activate');
 if(!function_exists(egw_social_btn_activate)):
 function egw_social_btn_activate(){
 	$egw_gen_set=array(
-		'pagename' =>post_type_list(),
+		'pagename'  => '',
 		'position'  => 'top',
 		'specific_post'  =>'on',
 		'bgcolor'  => '',
@@ -72,7 +63,6 @@ function egw_social_btn_activate(){
 				'search_results' =>'search_results', 
 				'archives' =>'archives', 
 		),
-	
 	);
 	add_option(EGWGENERALSETTING, $egw_gen_set);
 	$btn_set=array(

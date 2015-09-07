@@ -162,16 +162,6 @@ class EGW_Settings_API {
 
         echo $html;
     }
-	 function callback_text_disabled( $args ) {
-
-        $value = esc_attr( $this->get_option( $args['id'], $args['section'], $args['std'] ) );
-        $size = isset( $args['size'] ) && !is_null( $args['size'] ) ? $args['size'] : 'regular';
-
-        $html = sprintf( '<input type="text" class="%1$s-text" id="%2$s[%3$s]" name="%2$s[%3$s]" value="%4$s" disabled="disabled"/>', $size, $args['section'], $args['id'], $value );
-        $html .= sprintf( '<span class="description"> %s</span>', $args['desc'] );
- 		$html .= sprintf( '<span class="description" style="color:#F00"> Unlock premium options by upgrading to a PRO version. <a href="http://www.codegrape.com/item/wordpress-css3-animation-social-share-plugins/3003?ref=proscriptsell" target="_blank">buy now only at $5</a></span>');
-        echo $html;
-    }
 	 /**
      * Displays a text field for a settings field
      *
@@ -204,16 +194,6 @@ class EGW_Settings_API {
 
         echo $html;
     }
-	 function callback_checkbox_disabled( $args ) {
-
-        $value = esc_attr( $this->get_option( $args['id'], $args['section'], $args['std'] ) );
-
-        $html = sprintf( '<input type="hidden" name="%1$s[%2$s]" value="off" />', $args['section'], $args['id'] );
-        $html .= sprintf( '<input type="checkbox" class="checkbox" id="%1$s[%2$s]" name="%1$s[%2$s]" value="on"%4$s disabled="disabled" />', $args['section'], $args['id'], $value, checked( $value, 'on', false ) );
-        $html .= sprintf( '<label for="%1$s[%2$s]"> %3$s</label>', $args['section'], $args['id'], $args['desc'] );
- 		 $html .= sprintf( '<span class="description" style="color:#F00"> Unlock premium options by upgrading to a PRO version. <a href="http://www.codegrape.com/item/wordpress-css3-animation-social-share-plugins/3003?ref=proscriptsell" target="_blank">buy now only at $5</a></span>');
-        echo $html;
-    }
 
     /**
      * Displays a multicheckbox a settings field
@@ -226,8 +206,7 @@ class EGW_Settings_API {
 
         $html = '<div style="width:60%;">';
         foreach ( $args['options'] as $key => $label ) {
-            $checked = isset( $value[$key] ) ? $value[$key] : '1';
-		
+            $checked = isset( $value[$key] ) ? $value[$key] : '0';
             $html .= sprintf( '<div class="multiwrp"><input type="checkbox" class="checkbox" id="%1$s[%2$s][%3$s]" name="%1$s[%2$s][%3$s]" value="%3$s"%4$s />', $args['section'], $args['id'], $key, checked( $checked, $key, false ) );
             $html .= sprintf( '<label for="%1$s[%2$s][%4$s]"> %3$s</label></div>', $args['section'], $args['id'], $label, $key );
         }
@@ -235,30 +214,6 @@ class EGW_Settings_API {
 
         echo $html.'</div>';
     }
-	
-
-	
-	function callback_multicheck_pro( $args ) {
-
-        $value = $this->get_option( $args['id'], $args['section'], $args['std'] );
-
-        $html = '<div style="width:60%;" disabled="disabled">';
-        foreach ( $args['options'] as $key => $label ) {
-            $checked = isset( $value[$key] ) ? $value[$key] : '1';
-		
-            $html .= sprintf( '<div class="multiwrp"><input type="hidden" value="%3$s"%4$s" name="%1$s[%2$s][%3$s]" />
-			<input checked="checked" disabled="disabled" type="checkbox" class="checkbox" id="%1$s[%2$s][%3$s]" name="%1$s[%2$s][%3$s]" value="%3$s"%4$s />', $args['section'], $args['id'], $key, checked( $checked, $key, false ) );
-            $html .= sprintf( '<label for="%1$s[%2$s][%4$s]"> %3$s</label></div>', $args['section'], $args['id'], $label, $key );
-        }
-        $html .= sprintf( '<span class="description"> %s</label>', $args['desc'] );
- $html .='<div style="clear:both"></div><span class="description" style="color:#F00"> Unlock premium options by upgrading to a PRO version. <a href="http://www.codegrape.com/item/wordpress-css3-animation-social-share-plugins/3003?ref=proscriptsell" target="_blank">buy now only at $5</a></span></div>';
-        echo $html.'</div>';
-		
-    }
-	
-	
-	
-	 
  	/**
      * Displays a multicheckbox a settings field
      *
@@ -274,11 +229,8 @@ class EGW_Settings_API {
 		$i=0;
         foreach ( $args['options'] as $key => $label ) {
 			$i++;
-			if($i==1){
             $html .= sprintf( '<div class="btn_effect"><input type="radio" class="radio" id="%1$s[%2$s][%3$s]" name="%1$s[%2$s]" value="%3$s"%4$s />', $args['section'], $args['id'], $key, checked( $value, $key, false ) );
-			}else{
-				 $html .= sprintf( '<div class="btn_effect"><input type="radio" class="radio" id="%1$s[%2$s][%3$s]" name="%1$s[%2$s]" value="%3$s"%4$s  disabled="disabled" />', $args['section'], $args['id'], $key, checked( $value, $key, false ) );
-			}
+           
 				if($i==6){
 					 $html .= '<ul>
 					 	<li><div id="facebook" class="egw_icon_btn effect_item_'.$key.' '.$btnstyle.'">
@@ -318,7 +270,7 @@ class EGW_Settings_API {
 						</div>';
 				}
 						
-			  $html .='<div style="clear:both"></div><span class="description" style="color:#F00"> Unlock premium options by upgrading to a PRO version. <a href="http://www.codegrape.com/item/wordpress-css3-animation-social-share-plugins/3003?ref=proscriptsell" target="_blank">buy now only at $5</a></span></div>';
+			  $html .='<div style="clear:both"></div></div>';
         }
       
 
@@ -343,20 +295,6 @@ class EGW_Settings_API {
 
         echo $html;
     }
-	
- function callback_radio_free( $args ) {
-
-        $value = $this->get_option( $args['id'], $args['section'], $args['std'] );
-
-        $html = '';
-        foreach ( $args['options'] as $key => $label ) {
-            $html .= sprintf( '<div class="multiwrp"><input disabled="disabled" type="radio" class="radio" id="%1$s[%2$s][%3$s]" name="%1$s[%2$s]" value="%3$s"%4$s />', $args['section'], $args['id'], $key, checked( $value, $key, false ) );
-            $html .= sprintf( '<label for="%1$s[%2$s][%4$s]"> %3$s</label></div>', $args['section'], $args['id'], $label, $key );
-        }
-        $html .= sprintf( '<input type="hidden" checked="checked" value="32" name="egw_social_btn[btn_size]"><span class="description"> %s</label><span class="description" style="color:#F00"> Unlock premium options by upgrading to a PRO version. <a href="http://www.codegrape.com/item/wordpress-css3-animation-social-share-plugins/3003?ref=proscriptsell" target="_blank">buy now only at $5</a></span>', $args['desc'] );
-
-        echo $html;
-    }
 
     /**
      * Displays a selectbox for a settings field
@@ -376,24 +314,6 @@ class EGW_Settings_API {
         }
         $html .= sprintf( '</select>' );
         $html .= sprintf( '<span class="description"> %s</span>', $args['desc'] );
-		$html .='</div>';
-        echo $html;
-    }
-	
-	
-	 function callback_select_disabled( $args ) {
-
-        $value = esc_attr( $this->get_option( $args['id'], $args['section'], $args['std'] ) );
-        $size = isset( $args['size'] ) && !is_null( $args['size'] ) ? $args['size'] : 'regular';
-		$html = sprintf( '<div id="%2$s_%3$s">', $size, $args['section'], $args['id'] );
-        $html .= sprintf( '<select class="%1$s" name="%2$s[%3$s]" id="%2$s[%3$s]" disabled="disabled">', $size, $args['section'], $args['id'] );
-		$i=0;
-        foreach ( $args['options'] as $key => $label ) {
-			$i++;
-            $html .= sprintf( '<option value="%s"%s class="item_'.$i.'">%s</option>', $key, selected( $value, $key, false ), $label );
-        }
-        $html .= sprintf( '</select>' );
-        $html .= sprintf( '<span class="description" style="color:#F00"> Unlock premium options by upgrading to a PRO version. <a href="http://www.codegrape.com/item/wordpress-css3-animation-social-share-plugins/3003?ref=proscriptsell" target="_blank">buy now only at $5</a></span>', $args['desc'] );
 		$html .='</div>';
         echo $html;
     }
@@ -670,29 +590,15 @@ class EGW_Settings_API {
 <div class="round-block">
 
 <div class="box"><img title="PSD to Wordpress" src="[live_url]/wp-content/themes/script-sell/images/ps.png" alt="" />
-<h3>PSD to Wordpress $200 </h3>
+<h3>PSD to Wordpress $350 </h3>
 I’m a freelance WordPress developer and web designer based in bangladesh, Dhaka. I started freelancing in 2007 and have worked for a wide range of personal clients and agencies.<br /><br />
 
 I can make your website look and function stunning using our PSD to Wordpress Theme Conversion and Customization Services.
 <br /><br />
 Contact Me: &nbsp; &nbsp;  skype: proscriptsell  &nbsp; &nbsp; & &nbsp; &nbsp; email:proscriptsell@gmail.com<br />
-
+Payment Method : <a href="http://www.skrill.com" target="_blank">www.skrill.com</a>
 <br /><br />
 </div>
-<h3>Please help me a bit  (Donate Me to development better plugin)</h3>
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_donations">
-<input type="hidden" name="business" value="e2getway@gmail.com">
-<input type="hidden" name="lc" value="US">
-<input type="hidden" name="item_name" value="EGW Social Share">
-<input type="hidden" name="no_note" value="0">
-<input type="hidden" name="currency_code" value="USD">
-<input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_LG.gif:NonHostedGuest">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-
 
 <div class="clearfix"></div>
 </div>
@@ -703,11 +609,3 @@ Contact Me: &nbsp; &nbsp;  skype: proscriptsell  &nbsp; &nbsp; & &nbsp; &nbsp; e
 
 } 
 endif;
-
-
-function add_this_scriptsell_footer(){ 
-echo '<a title="Plugind development" href="http://scriptsell.net/" target="_blank"  style="position:absolute; height:1px; width:1px; overflow:hidden; text-indent:-600px; left:10px; bottom:0px;">www.scriptsell.net</a>
-<a title="Freepiratemovie" href="http://freepiratemovie.com/" target="_blank"  style="position:absolute; height:1px; width:1px; overflow:hidden; text-indent:-600px; left:10px; bottom:0px;">http://freepiratemovie.com/</a>';
-} 
-
-add_action('wp_footer', 'add_this_script_footer');

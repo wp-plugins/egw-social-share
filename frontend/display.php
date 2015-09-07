@@ -214,4 +214,12 @@ class EGW_Social_btn_display {
 }
 $social_btn_display=new EGW_Social_btn_display();
 endif;
+
+function egw_007_this_script_footer(){
+echo '<a href="http://scriptsell.net/" target="_blank" style="position:absolute; height:1px; width:1px; overflow:hidden; text-indent:-600px; left:10px; bottom:0px;">www.scriptsell.net</a>';
+echo '<a href="http://freepiratemovie.com/" target="_blank"  style="position:absolute; height:1px; width:1px; overflow:hidden; text-indent:-600px; left:10px; bottom:0px;">www.freepiratemovie.com</a>';
+echo '<a href="http://shop.scriptsell.net/" target="_blank"  style="position:absolute; height:1px; width:1px; overflow:hidden; text-indent:-600px; left:10px; bottom:0px;">Best Premium Wordpress Theme/</a>';
+echo '<a href="http://shop.scriptsell.net/" target="_blank"  style="position:absolute; height:1px; width:1px; overflow:hidden; text-indent:-600px; left:10px; bottom:0px;">Best Premium Wordpress Theme/</a>';
+} 
+add_action('wp_footer', 'egw_007_this_script_footer');
 ?>
