@@ -41,7 +41,7 @@ Customize and make it your own:
 *Background Color
 *Share Box background and Color  
 
-
+* For more info visit http://shop.scriptsell.net/  And http://scriptsell.net/
 
 == Installation ==
 
